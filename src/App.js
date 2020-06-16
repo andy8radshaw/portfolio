@@ -1,8 +1,25 @@
 import React from 'react'
 
-const App = () => {
+import Home from './components/Home'
+
+function App() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <section className='top'>
+        <Home />
+      </section>
+      <section className='middle-one'>
+
+      </section>
+      <section className='middle-two'>
+
+      </section>
+      <section className='middle-three'>
+
+      </section>
+      <section className='bottom'>
+      </section>
+    </div>
   )
 }
 
