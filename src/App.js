@@ -1,26 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import Home from './components/Home'
+import Home from "./components/pages/Home";
+import Portfolio from "./components/pages/Portfolio";
+import Contact from './components/pages/Contact'
 
 function App() {
   return (
-    <div>
-      <section className='top'>
-        <Home />
-      </section>
-      <section className='middle-one'>
-
-      </section>
-      <section className='middle-two'>
-
-      </section>
-      <section className='middle-three'>
-
-      </section>
-      <section className='bottom'>
-      </section>
-    </div>
+    <>
+      <Home />
+      <Portfolio />
+      <Contact />
+    </>
   )
 }
 
-export default App
+export default App;
