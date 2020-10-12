@@ -10,11 +10,14 @@ export default function Navbar() {
   const handleBurger = () => {
     setBurgerIsOpen(!burgerIsOpen)
   }
+  const handleHomeIcon = () => {
+    if (burgerIsOpen) setBurgerIsOpen(false)
+  }
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item" href="https://bulma.io">
+        <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
           <img src={andyImage} alt="pixel andy" />
         </Link>
 
