@@ -6,7 +6,8 @@ $family-sans-serif: $main-font;
 $footer-padding: 1.5rem;
 
 .Typewriter {
-  padding: 15px 0 0 5px;
+  line-height: 1.5;
+  padding: 15px 0 0 0;
   .cursor {
     display: inline-block;
     position: relative;
