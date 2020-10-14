@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-
 import { Link } from 'react-router-dom'
 
 import andyImage from '../../assets/pixel-andy-small.png'
+import Typewriter from './Typewriter'
 
 
 export default function Navbar() {
@@ -14,12 +14,14 @@ export default function Navbar() {
     if (burgerIsOpen) setBurgerIsOpen(false)
   }
 
+
   return (
     <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
           <img src={andyImage} alt="pixel andy" />
         </Link>
+        <Typewriter />
 
         <span
           role="button"

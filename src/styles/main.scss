@@ -5,6 +5,36 @@ $main-font: 'Fira Mono', monospace;
 $family-sans-serif: $main-font;
 $footer-padding: 1.5rem;
 
+.Typewriter {
+  padding: 15px 0 0 5px;
+  .cursor {
+    display: inline-block;
+    position: relative;
+  }
+  .cursor::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    right: -4px;
+    top: -3px;
+    width: 1px;
+    height: 100%;
+    background-color: #666;
+    animation: cursor-animation 1.5s step-end infinite;
+  }
+  @keyframes cursor-animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
 
 
 @import '~bulma/bulma.sass';
