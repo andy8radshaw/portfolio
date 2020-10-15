@@ -5,6 +5,7 @@ import andyImage from '../../assets/pixel-andy-small.png'
 import Typewriter from './Typewriter'
 
 
+
 export default function Navbar() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false)
   const handleBurger = () => {
@@ -44,6 +45,12 @@ export default function Navbar() {
           <Link className="navbar-item" to="/contact" onClick={handleBurger}>
             say hello
           </Link>
+          <div className="navbar-item">
+            <div className="buttons">
+              <button className="button is-light">dark mode?</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </nav>

@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom'
 
 // import Header from '../common/Header'
 import PageContainer from '../common/PageContainer'
+import PageTitle from '../common/PageTitle'
 
 function Home() {
   return (
     <PageContainer>
       <div className='Home'>
+        <PageTitle title="About Me"/>
 
         <div className="stats">
           <p><strong>Name: </strong>Andy Bradshaw</p>
@@ -20,7 +22,6 @@ function Home() {
                   switches), Apple Magic Trackpad, CalDigit TS3 hub, Lacie D2 HD</p>
         </div>
         <br></br>
-        <h1>About me</h1>
         <p>A Junior Software Engineer embarking on my first role at <a href="https://www.reachplc.com/home" target="_blank">Reach Plc.</a> Previously graduating
         from General Assembly’s Software Engineering Immersive course, where I obtained a strong
         understanding of modern programming languages including HTML, CSS, JavaScript, React, Node.js & Python. My
