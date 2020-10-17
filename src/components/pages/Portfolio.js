@@ -17,11 +17,11 @@ export default function Portfolio() {
             <ProjectCard
               projectName={project.name}
               key={project.id}
-              projectImage="https://bulma.io/images/placeholders/1280x960.png"
-              imageAltText="placeholder image"
+              projectImage={project.mainImage}
+              imageAltText={project.name, 'image'}
             />
           ))}
-          
+
         </div>
       </div>
     </PageContainer>
