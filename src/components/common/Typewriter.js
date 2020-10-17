@@ -5,12 +5,12 @@ import useTypewriter from 'react-typewriter-hook'
 
 const MagicOcean = [
   'Hey, I\'m Andy',
-  'I\'m a Software Engineer',
+  'A Software Engineer',
   'Based in London.'
 ]
 let index = 0
 
-export default function Typewriter() {
+export default function Typewriter({ isHidden }) {
   const [magicName, setMagicName] = useState('Hey I\'m Andy')
   const intervalRef = useRef({})
   const name = useTypewriter(magicName)
@@ -28,7 +28,7 @@ export default function Typewriter() {
     [magicName]
   )
   return (
-    <div className="Typewriter">
+    <div className={isHidden ? 'Typewriter' : 'Typewriter is-hidden'}>
       <p className="cursor">{name}</p>
     </div>
   )

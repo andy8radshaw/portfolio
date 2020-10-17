@@ -7,7 +7,8 @@ import andyImage from '../../assets/pixel-andy-small.png'
 
 export default function Navbar() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false)
-  const [isLightMode, setIsLightMode] = useState(false)
+  const [isLightMode, setIsLightMode] = useState(true)
+  const [typwriterIsOn, setTypewriterIsOn] = useState(true)
 
   const handleBurger = () => {
     setBurgerIsOpen(!burgerIsOpen)
@@ -24,6 +25,14 @@ export default function Navbar() {
     setIsLightMode(false)
   }
 
+  const handleTypewriterOn = () => {
+    setTypewriterIsOn(true)
+  }
+
+  const handleTypewriterOff = () => {
+    setTypewriterIsOn(false)
+  }
+
 
   return (
     <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -31,7 +40,7 @@ export default function Navbar() {
         <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
           <img src={andyImage} alt="pixel andy" />
         </Link>
-        <Typewriter />
+        <Typewriter isHidden={typwriterIsOn}/>
 
         <span
           role="button"
@@ -55,12 +64,27 @@ export default function Navbar() {
             say hello
           </Link>
           <div className="navbar-item has-dropdown is-hoverable">
-            <span className="navbar-link">settings...</span>
-            <div className="navbar-dropdown">
-              <div className="navbar-item">
+            <span className="navbar-link">
+              <span className="icon">
+                <i className="fas fa-cog"></i>
+              </span>
+            </span>
+            <div className="navbar-dropdown is-right">
+              <div className="navbar-item dropdown">
                 <div className="tags has-addons">
+                  <p>Light or Dark mode?</p>
+                  <br/>
                   <span onClick={handleLightMode} className={isLightMode ? 'tag is-primary' : 'tag is-dark'}>light</span>
                   <span onClick={handleDarkMode} className={isLightMode ? 'tag is-light' : 'tag is-primary'}>dark</span>
+                </div>
+              </div>
+              <hr className="navbar-divider"></hr>
+              <div className="navbar-item dropdown">
+                <div className="tags has-addons">
+                  <p>Typewriter On/Off</p>
+                  <br/>
+                  <span onClick={handleTypewriterOn} className={typwriterIsOn ? 'tag is-primary' : 'tag is-light'}>on</span>
+                  <span onClick={handleTypewriterOff} className={typwriterIsOn ? 'tag is-light' : 'tag is-primary'}>off</span>
                 </div>
               </div>
             </div>

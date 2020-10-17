@@ -5,6 +5,10 @@ $main-font: 'Fira Mono', monospace;
 $family-sans-serif: $main-font;
 $footer-padding: 1.5rem;
 
+.dropdown {
+  min-width: 150px;
+}
+
 .Typewriter {
   line-height: 1.5;
   padding: 15px 0 0 0;
