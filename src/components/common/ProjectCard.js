@@ -5,7 +5,7 @@ export default function ProjectCard({ projectName, projectImage, imageAltText })
     <div className="column is-one-third-desktop is-half-tablet">
       <div className="card">
         <div className="card-image">
-          <figure className="image is-4by3">
+          <figure className="image is-4by3 main-image">
             <img src={projectImage} alt={imageAltText} />
           </figure>
         </div>
