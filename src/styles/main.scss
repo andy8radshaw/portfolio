@@ -5,6 +5,8 @@ $main-font: 'Fira Mono', monospace;
 $family-sans-serif: $main-font;
 $footer-padding: 1.5rem;
 
+// NAVBAR
+
 .dropdown {
   min-width: 220px;
 }
@@ -39,6 +41,22 @@ $footer-padding: 1.5rem;
     }
   }
 }
+
+.navbar-item {
+  &.has-dropdown {
+    .navbar-dropdown {
+      display: none;
+    }
+    &.is-active {
+      .navbar-dropdown {
+        display: block;
+      }
+    }
+ }
+}
+
+
+
 
 
 

@@ -74,8 +74,11 @@ export default function Navbar() {
           </Link>
           <div className={settingsIsOpen ? 'navbar-item has-dropdown is-active' : 'navbar-item has-dropdown'} >
             <span onClick={handleSettings} className="navbar-link is-arrowless">
-              <span className="icon">
-                <i className="fas fa-cog"></i>
+              <span className={settingsIsOpen ? 'icon is-hidden' : 'icon'}>
+                <i className='fas fa-cog'></i>
+              </span>
+              <span className={!settingsIsOpen ? 'icon is-hidden' : 'icon'}>
+                <i className='fas fa-times'></i>
               </span>
             </span>
             <div className="navbar-dropdown is-right">
