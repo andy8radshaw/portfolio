@@ -15,10 +15,8 @@ export default function Portfolio() {
 
           {projects.map(project => (
             <ProjectCard
-              projectName={project.name}
               key={project.id}
-              projectImage={project.mainImage}
-              imageAltText={project.name, 'image'}
+              {...project}
             />
           ))}
 
