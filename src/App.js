@@ -9,6 +9,7 @@ import ProjectShow from './components/pages/ProjectShow'
 import Contact from './components/pages/Contact'
 import Experience from './components/pages/Experience'
 import Footer from './components/common/Footer'
+import ErrorPage from './components/common/ErrorPage'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
         <Route path="/experience" component={Experience} />
+        <Route path="/*" component={ErrorPage} />
       </Switch>
       <Footer />
     </BrowserRouter>

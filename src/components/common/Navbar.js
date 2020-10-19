@@ -38,6 +38,7 @@ export default function Navbar() {
   const handleTypewriterOff = () => {
     setTypewriterIsOn(false)
   }
+  
 
 
   return (
@@ -46,7 +47,9 @@ export default function Navbar() {
         <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
           <img src={andyImage} alt="pixel andy" />
         </Link>
-        <Typewriter isHidden={typwriterIsOn} />
+        <Typewriter 
+          isHidden={typwriterIsOn}
+        />
 
         <span
           role="button"

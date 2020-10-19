@@ -2,16 +2,16 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import useTypewriter from 'react-typewriter-hook'
 
-
 const MagicOcean = [
-  'Hey, I\'m Andy',
-  'A Software Engineer',
-  'Based in London.'
+  'Andy Bradshaw',
+  'Software Engineer',
+  'London.'
 ]
+
 let index = 0
 
 export default function Typewriter({ isHidden }) {
-  const [magicName, setMagicName] = useState('Hey I\'m Andy')
+  const [magicName, setMagicName] = useState('Andy Bradshaw')
   const intervalRef = useRef({})
   const name = useTypewriter(magicName)
   useEffect(
