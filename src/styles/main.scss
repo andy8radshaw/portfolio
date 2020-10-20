@@ -5,6 +5,23 @@ $main-font: 'Fira Mono', monospace;
 $family-sans-serif: $main-font;
 $footer-padding: 1.5rem;
 
+$black-coffee: #342e37;
+$silver: #d0b8ac;
+$silk: #f3d8c7;
+$green: #7ca982;
+$bright-green: #C6F91F;
+$white: #ffffff;
+$black :#000000;
+$red: #e03616;
+
+$primary: $green;
+$dark: $black-coffee;
+$link: $red;
+$body-background-color: $white;
+$control-border-width: 2px;
+
+
+
 // NAVBAR
 
 .dropdown {
@@ -55,9 +72,5 @@ $footer-padding: 1.5rem;
  }
 }
 
-
-
-
-
-
 @import '~bulma/bulma.sass';
+
