@@ -5,10 +5,9 @@ import Typewriter from './Typewriter'
 import andyImage from '../../assets/pixel-andy-small.png'
 
 
-export default function Navbar() {
+export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false)
   const [settingsIsOpen, setSettingsIsOpen] = useState(false)
-  const [isLightMode, setIsLightMode] = useState(true)
   const [typwriterIsOn, setTypewriterIsOn] = useState(true)
 
   const handleBurger = () => {
@@ -23,13 +22,7 @@ export default function Navbar() {
     if (burgerIsOpen) setBurgerIsOpen(false)
   }
 
-  const handleLightMode = () => {
-    setIsLightMode(true)
-  }
-
-  const handleDarkMode = () => {
-    setIsLightMode(false)
-  }
+  
 
   const handleTypewriterOn = () => {
     setTypewriterIsOn(true)
@@ -42,7 +35,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav className={isLightMode ? 'navbar is-fixed-top' : 'navbar is-fixed-top is-dark'} role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
@@ -65,7 +58,7 @@ export default function Navbar() {
           </span>
         </div>
 
-        <div className={`navbar-menu ${burgerIsOpen ? 'is-active' : ''}`}>
+        <div className={`navbar-menu has-text-centered-touch ${burgerIsOpen ? 'is-active' : ''}`}>
           <div className="navbar-end">
             <Link className="navbar-item" to="/experience" onClick={handleBurger}>
               experience
@@ -89,8 +82,8 @@ export default function Navbar() {
                 <div className="navbar-item dropdown">
                   <div className="tags">
                     <span className="tag is-white">dark mode</span>
-                    <span onClick={handleDarkMode} className={isLightMode ? 'tag is-light' : 'tag is-primary'}>on</span>
-                    <span onClick={handleLightMode} className={isLightMode ? 'tag is-danger' : 'tag is-dark'}>off</span>
+                    <span onClick={handleDarkOn} className={isLightMode ? 'tag is-light' : 'tag is-primary'}>on</span>
+                    <span onClick={handleDarkOff} className={isLightMode ? 'tag is-danger' : 'tag is-dark'}>off</span>
                   </div>
                 </div>
                 <hr className="navbar-divider"></hr>
@@ -110,26 +103,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
-
-{/* <div class="navbar-item has-dropdown">
-    <a class="navbar-link">
-      Docs
-    </a>
-
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        Overview
-      </a>
-      <a class="navbar-item">
-        Elements
-      </a>
-      <a class="navbar-item">
-        Components
-      </a>
-      <hr class="navbar-divider">
-      <div class="navbar-item">
-        Version 0.9.1
-      </div>
-    </div>
-  </div> */}

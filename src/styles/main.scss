@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 
-$main-font: 'Fira Mono', monospace;
+$main-font: "Fira Mono", monospace;
 
 $family-sans-serif: $main-font;
-$footer-padding: 1.5rem;
+
 
 $black-coffee: #342e37;
 $silver: #d0b8ac;
 $silk: #f3d8c7;
 $green: #7ca982;
-$bright-green: #C6F91F;
+$bright-green: #c6f91f;
 $white: #ffffff;
-$black :#000000;
+$black: #000000;
 $red: #e03616;
 
 $primary: $green;
@@ -19,7 +19,15 @@ $dark: $black-coffee;
 $link: $red;
 $body-background-color: $white;
 $control-border-width: 2px;
+$danger: $red;
 
+$footer-padding: 1.5rem;
+$footer-background-color: $primary;
+
+.dark-theme {
+  // background-color: $black-coffee;
+  // color: $silver;
+}
 
 
 // NAVBAR
@@ -69,8 +77,7 @@ $control-border-width: 2px;
         display: block;
       }
     }
- }
+  }
 }
 
-@import '~bulma/bulma.sass';
-
+@import "~bulma/bulma.sass";
