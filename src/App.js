@@ -17,17 +17,15 @@ function App() {
   const [isLightMode, setIsLightMode] = useState(true)
 
   const handleDarkOn = () => {
-    console.log('i want dark theme on now!')
     setIsLightMode(false)
   }
 
   const handleDarkOff = () => {
-    console.log('actually no light theme please')
     setIsLightMode(true)
   }
 
   return (
-    <div className={isLightMode ? 'light-theme' : 'dark-theme'}>
+    <div className={isLightMode ? 'whole-page' : 'whole-page has-background-dark has-text-white'}>
       <BrowserRouter>
         <Navbar 
           handleDarkOn={handleDarkOn}
@@ -35,14 +33,19 @@ function App() {
           isLightMode={isLightMode}
         />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route 
+            exact path="/"
+            render={(props) => (
+              <Home {...props} isLightMode={isLightMode} />
+            )}
+          />
           <Route path="/portfolio/:id" component={ProjectShow} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/experience" component={Experience} />
           <Route path="/*" component={ErrorPage} />
         </Switch>
-        <Footer />
+        <Footer isLightMode={isLightMode} />
       </BrowserRouter>
     </div>
   )

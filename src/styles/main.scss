@@ -14,9 +14,10 @@ $white: #ffffff;
 $black: #000000;
 $red: #e03616;
 
-$primary: $green;
+$primary: $white;
 $dark: $black-coffee;
 $link: $red;
+$warning: $bright-green;
 $body-background-color: $white;
 $control-border-width: 2px;
 $danger: $red;
@@ -24,9 +25,8 @@ $danger: $red;
 $footer-padding: 1.5rem;
 $footer-background-color: $primary;
 
-.dark-theme {
-  // background-color: $black-coffee;
-  // color: $silver;
+.whole-page {
+  min-height: calc(100vh - 3.25rem);
 }
 
 

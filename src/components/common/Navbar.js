@@ -82,16 +82,16 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
                 <div className="navbar-item dropdown">
                   <div className="tags">
                     <span className="tag is-white">dark mode</span>
-                    <span onClick={handleDarkOn} className={isLightMode ? 'tag is-light' : 'tag is-primary'}>on</span>
-                    <span onClick={handleDarkOff} className={isLightMode ? 'tag is-danger' : 'tag is-dark'}>off</span>
+                    <span onClick={handleDarkOn} className={isLightMode ? 'tag is-light' : 'tag is-warning'}>on</span>
+                    <span onClick={handleDarkOff} className={isLightMode ? 'tag is-warning' : 'tag is-light'}>off</span>
                   </div>
                 </div>
                 <hr className="navbar-divider"></hr>
                 <div className="navbar-item dropdown">
                   <div className="tags">
                     <span className="tag is-white">typewriter</span>
-                    <span onClick={handleTypewriterOn} className={typwriterIsOn ? 'tag is-primary' : 'tag is-light'}>on</span>
-                    <span onClick={handleTypewriterOff} className={typwriterIsOn ? 'tag is-light' : 'tag is-danger'}>off</span>
+                    <span onClick={handleTypewriterOn} className={typwriterIsOn ? 'tag is-warning' : 'tag is-light'}>on</span>
+                    <span onClick={handleTypewriterOff} className={typwriterIsOn ? 'tag is-light' : 'tag is-warning'}>off</span>
                   </div>
                 </div>
               </div>
