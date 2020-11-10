@@ -39,11 +39,36 @@ function App() {
               <Home {...props} isLightMode={isLightMode} />
             )}
           />
-          <Route path="/portfolio/:id" component={ProjectShow} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/*" component={ErrorPage} />
+          <Route
+            path="/portfolio/:id"
+            render={(props) => (
+              <ProjectShow {...props} isLightMode={isLightMode} />
+            )}
+          />
+          <Route
+            path="/portfolio"
+            render={(props) => (
+              <Portfolio {...props} isLightMode={isLightMode} />
+            )}
+          />
+          <Route
+            path="/contact"
+            render={(props) => (
+              <Contact {...props} isLightMode={isLightMode} />
+            )}
+          />
+          <Route
+            path="/experience"
+            render={(props) => (
+              <Experience {...props} isLightMode={isLightMode} />
+            )}
+          />
+          <Route
+            path="/*"
+            render={(props) => (
+              <ErrorPage {...props} isLightMode={isLightMode} />
+            )}
+          />
         </Switch>
         <Footer isLightMode={isLightMode} />
       </BrowserRouter>

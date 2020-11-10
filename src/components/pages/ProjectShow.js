@@ -6,7 +6,7 @@ import PageTitle from '../common/PageTitle'
 
 import { projects } from '../../lib/projects'
 
-export default function ProjectShow() {
+export default function ProjectShow({ isLightMode }) {
   const [project, setProject] = useState(null)
   const { id } = useParams()
 
@@ -26,7 +26,7 @@ export default function ProjectShow() {
 
   return (
     <PageContainer>
-      <PageTitle  title={project.name} />
+      <PageTitle  title={project.name} isLightMode={isLightMode} />
       <p>{project.description}</p>
       <br/>
       <a href={project.deployedApp} rel="noreferrer" target="_blank">Deployed App</a>

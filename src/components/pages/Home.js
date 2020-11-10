@@ -43,6 +43,7 @@ function Home({ isLightMode }) {
         <p>Please get in <Link to="/contact">contact</Link> if you are interested in working with me. Likewise, if you
         would like some advice about your sound system or just want to chat guitars. Gibson ES-335 if you&apos;re
         asking...</p>
+        <br></br>
       </div>
 
     </PageContainer>

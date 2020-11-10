@@ -69,7 +69,8 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
             <Link className="navbar-item" to="/contact" onClick={handleBurger}>
               say hello
             </Link>
-            <div className={settingsIsOpen ? 'navbar-item has-dropdown is-active' : 'navbar-item has-dropdown'} >
+            <div className={settingsIsOpen ? 'navbar-item has-dropdown is-hoverable is-active' : 'navbar-item is-hoverable has-dropdown'} >
+              {/* <div className='navbar-item has-dropdown is-hoverable'> */}
               <span onClick={handleSettings} className="navbar-link is-arrowless">
                 <span className={settingsIsOpen ? 'icon is-hidden' : 'icon'}>
                   <i className='fas fa-cog'></i>

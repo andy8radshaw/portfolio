@@ -26,6 +26,7 @@ $footer-padding: 1.5rem;
 $footer-background-color: $primary;
 
 .whole-page {
+  position: relative;
   min-height: calc(100vh - 3.25rem);
 }
 
@@ -77,6 +78,16 @@ $footer-background-color: $primary;
         display: block;
       }
     }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 72px;
+  width: 100%;
+  @media screen and (max-width: 500px) {
+    bottom: -72px;
   }
 }
 

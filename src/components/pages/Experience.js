@@ -2,11 +2,12 @@ import React from 'react'
 import PageContainer from '../common/PageContainer'
 import PageTitle from '../common/PageTitle'
 
-export default function Experience() {
+export default function Experience({ isLightMode }) {
   return (
     <PageContainer>
       <PageTitle 
         title="Experience"
+        isLightMode={isLightMode}
       />
 
       <h1 className="subtitle">Reach Plc | Junior Software Engineer | Oct 2020 to present</h1>

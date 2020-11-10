@@ -6,10 +6,13 @@ import ProjectCard from '../common/ProjectCard'
 import { projects } from '../../lib/projects'
 
 
-export default function Portfolio() {
+export default function Portfolio({ isLightMode }) {
   return (
     <PageContainer>
-      <PageTitle title="Portfolio" />
+      <PageTitle
+        title="Portfolio"
+        isLightMode={isLightMode}
+      />
       <div className="container">
         <div className="columns is-multiline">
 
@@ -21,6 +24,7 @@ export default function Portfolio() {
           ))}
 
         </div>
+        <br></br>
       </div>
     </PageContainer>
   )
