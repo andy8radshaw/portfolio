@@ -26,7 +26,7 @@ function Home({ isLightMode }) {
                   switches), Apple Magic Trackpad, CalDigit TS3 hub, Lacie D2 HD</p>
         </div>
         <br></br>
-        <p>A Junior Software Engineer embarking on my first role at <a href="https://www.reachplc.com/home" target="_blank">Reach Plc.</a> Previously graduating
+        <p>A Junior Software Engineer embarking on my first role at <a href="https://www.reachplc.com/home" target="_blank" className="is-info">Reach Plc.</a> Previously graduating
         from General Assembly’s Software Engineering Immersive course, where I obtained a strong
         understanding of modern programming languages including HTML, CSS, JavaScript, React, Node.js & Python. My
         journey into software engineering came from a love of problem solving and a fascination and curiosity for
@@ -40,7 +40,7 @@ function Home({ isLightMode }) {
         about being adaptable, working as part of a team and delivering excellent results on time in an agile
         environment. In my new role at Reach I will continue on the path of development, improving my
         skills, and aim to become a valued and creative member of the team.</p>
-        <p>Please get in <Link to="/contact">contact</Link> if you are interested in working with me. Likewise, if you
+        <p>Please get in <Link to="/contact" className="is-info">contact</Link> if you are interested in working with me. Likewise, if you
         would like some advice about your sound system or just want to chat guitars. Gibson ES-335 if you&apos;re
         asking...</p>
         <br></br>

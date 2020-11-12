@@ -38,7 +38,7 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
     <nav className={isLightMode ? 'navbar is-fixed-top' : 'navbar is-fixed-top is-dark'} role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" href="https://bulma.io" onClick={handleHomeIcon}>
+          <Link to="/" className="navbar-item nav-button" href="https://bulma.io" onClick={handleHomeIcon}>
             <img src={andyImage} alt="pixel andy" />
           </Link>
           <Typewriter
@@ -60,13 +60,13 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
 
         <div className={`navbar-menu has-text-centered-touch ${burgerIsOpen ? 'is-active' : ''}`}>
           <div className="navbar-end">
-            <Link className="navbar-item" to="/experience" onClick={handleBurger}>
+            <Link className="navbar-item nav-button" to="/experience" onClick={handleBurger}>
               experience
             </Link>
-            <Link className="navbar-item" to="/portfolio" onClick={handleBurger}>
+            <Link className="navbar-item nav-button" to="/portfolio" onClick={handleBurger}>
               portfolio
             </Link>
-            <Link className="navbar-item" to="/contact" onClick={handleBurger}>
+            <Link className="navbar-item nav-button" to="/contact" onClick={handleBurger}>
               say hello
             </Link>
             <div className={settingsIsOpen ? 'navbar-item has-dropdown is-hoverable is-active' : 'navbar-item is-hoverable has-dropdown'} >

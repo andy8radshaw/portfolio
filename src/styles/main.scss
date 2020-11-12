@@ -8,19 +8,23 @@ $family-sans-serif: $main-font;
 $black-coffee: #342e37;
 $silver: #d0b8ac;
 $silk: #f3d8c7;
-$green: #7ca982;
 $bright-green: #c6f91f;
 $white: #ffffff;
 $black: #000000;
 $red: #e03616;
 
+
 $primary: $white;
 $dark: $black-coffee;
 $link: $red;
+$info: $red;
 $warning: $bright-green;
 $body-background-color: $white;
+$success: #28232b;
 $control-border-width: 2px;
 $danger: $red;
+$navbar-item-hover-background-color: none;
+$navbar-item-hover-color: none;
 
 $footer-padding: 1.5rem;
 $footer-background-color: $primary;
@@ -79,7 +83,21 @@ $footer-background-color: $primary;
       }
     }
   }
+  transition: 0.4s;
 }
+
+.nav-button {
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $bright-green;
+  }
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
 
 .footer {
   position: absolute;

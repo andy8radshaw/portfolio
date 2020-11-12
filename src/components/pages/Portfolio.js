@@ -11,6 +11,7 @@ export default function Portfolio({ isLightMode }) {
     <PageContainer>
       <PageTitle
         title="Portfolio"
+        subTitle="Here you'll find some of the projects I've worked on. Click them to find out more..."
         isLightMode={isLightMode}
       />
       <div className="container">
@@ -20,6 +21,7 @@ export default function Portfolio({ isLightMode }) {
             <ProjectCard
               key={project.id}
               {...project}
+              isLightMode={isLightMode}
             />
           ))}
 
