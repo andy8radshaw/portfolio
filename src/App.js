@@ -32,6 +32,7 @@ function App() {
           handleDarkOff={handleDarkOff}
           isLightMode={isLightMode}
         />
+        
         <Switch>
           <Route 
             exact path="/"

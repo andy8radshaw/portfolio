@@ -32,7 +32,6 @@ export default function ProjectShow({ isLightMode }) {
       <a href={project.deployedApp} rel="noreferrer" target="_blank">Deployed App</a>
       <br/>
       <a href={project.readMe} rel="noreferrer" target="_blank">Readme</a>
-
     </PageContainer>
   )
 }

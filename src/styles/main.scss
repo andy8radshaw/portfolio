@@ -6,8 +6,6 @@ $family-sans-serif: $main-font;
 
 
 $black-coffee: #342e37;
-$silver: #d0b8ac;
-$silk: #f3d8c7;
 $bright-green: #c6f91f;
 $white: #ffffff;
 $black: #000000;
@@ -25,6 +23,7 @@ $control-border-width: 2px;
 $danger: $red;
 $navbar-item-hover-background-color: none;
 $navbar-item-hover-color: none;
+$hr-background-color: $red;
 
 $footer-padding: 1.5rem;
 $footer-background-color: $primary;
@@ -32,6 +31,10 @@ $footer-background-color: $primary;
 .whole-page {
   position: relative;
   min-height: calc(100vh - 3.25rem);
+}
+
+hr {
+  background-color: $bright-green;
 }
 
 
@@ -84,18 +87,21 @@ $footer-background-color: $primary;
     }
   }
   transition: 0.4s;
+  
 }
 
 .nav-button {
   border-bottom: 2px solid transparent;
   &:hover {
     border-bottom: 2px solid $bright-green;
+    transform: scale(1.05);
   }
 }
 
 .project-card:hover {
   transform: scale(1.02);
   transition: 0.2s;
+  box-shadow: 0 0 15px rgba($color: #555555, $alpha: 0.5);
 }
 
 

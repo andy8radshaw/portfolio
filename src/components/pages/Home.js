@@ -2,9 +2,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// import Header from '../common/Header'
 import PageContainer from '../common/PageContainer'
 import PageTitle from '../common/PageTitle'
+
 
 function Home({ isLightMode }) {
   
@@ -31,7 +31,7 @@ function Home({ isLightMode }) {
         understanding of modern programming languages including HTML, CSS, JavaScript, React, Node.js & Python. My
         journey into software engineering came from a love of problem solving and a fascination and curiosity for
         all things tech.
-        </p>
+        </p><br/>
 
         <p>Before all this coding took off, I worked in the audio industry for 10 years, designing and selling sound
         systems into shops, offices, stadiums and churches. Projects I&apos;ve worked on include; Harrods, Kings
@@ -39,13 +39,12 @@ function Home({ isLightMode }) {
         great deal
         about being adaptable, working as part of a team and delivering excellent results on time in an agile
         environment. In my new role at Reach I will continue on the path of development, improving my
-        skills, and aim to become a valued and creative member of the team.</p>
+        skills, and aim to become a valued and creative member of the team.</p><br/>
         <p>Please get in <Link to="/contact" className="is-info">contact</Link> if you are interested in working with me. Likewise, if you
         would like some advice about your sound system or just want to chat guitars. Gibson ES-335 if you&apos;re
         asking...</p>
         <br></br>
       </div>
-
     </PageContainer>
   )
 }

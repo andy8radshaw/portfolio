@@ -2,6 +2,17 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <h1>this is the Header</h1>
+    <section className="hero is-warning">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">
+        Primary title
+          </h1>
+          <h2 className="subtitle">
+        Primary subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
   )
 }
