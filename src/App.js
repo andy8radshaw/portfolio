@@ -8,6 +8,7 @@ import Portfolio from './components/pages/Portfolio'
 import ProjectShow from './components/pages/ProjectShow'
 import Contact from './components/pages/Contact'
 import Experience from './components/pages/Experience'
+import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import ErrorPage from './components/common/ErrorPage'
 
@@ -27,14 +28,14 @@ function App() {
   return (
     <div className={isLightMode ? 'whole-page' : 'whole-page has-background-dark has-text-white'}>
       <BrowserRouter>
-        <Navbar 
+        <Header />
+        <Navbar
           handleDarkOn={handleDarkOn}
           handleDarkOff={handleDarkOff}
           isLightMode={isLightMode}
         />
-        
         <Switch>
-          <Route 
+          <Route
             exact path="/"
             render={(props) => (
               <Home {...props} isLightMode={isLightMode} />

@@ -35,7 +35,7 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
 
 
   return (
-    <nav className={isLightMode ? 'navbar is-fixed-top' : 'navbar is-fixed-top is-dark'} role="navigation" aria-label="main navigation">
+    <nav className={isLightMode ? 'navbar' : 'navbar is-dark'} role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item nav-button" href="https://bulma.io" onClick={handleHomeIcon}>

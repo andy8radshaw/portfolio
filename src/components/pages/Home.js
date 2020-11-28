@@ -17,12 +17,12 @@ function Home({ isLightMode }) {
         />
 
         <div className="stats">
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Name: </strong>Andy Bradshaw</p>
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Location: </strong>New Cross, South East London</p>
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Hometown: </strong>Taunton, Somerset</p>
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Likes: </strong>Guitars, Formula 1, Climbing, Vegatsu curry from Wagamamas, Purezza Pizza</p>
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Dislikes: </strong>Lockdown, and not being able to see my family</p>
-          <p><strong className={isLightMode ? '' : 'has-text-light'}>Desk Setup: </strong>MacBook Pro 16&quot;, Dell 27&quot; 4k Monitor, KeyChron K2 Keyboard (blue Gateron
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Name: </strong>Andy Bradshaw</p>
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Location: </strong>New Cross, South East London</p>
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Hometown: </strong>Taunton, Somerset</p>
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Likes: </strong>Guitars, Formula 1, Climbing, Vegatsu curry from Wagamamas, Purezza Pizza</p>
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Dislikes: </strong>Lockdown, and not being able to see my family</p>
+          <p><strong className={isLightMode ? '' : 'has-text-primary'}>Desk Setup: </strong>MacBook Pro 16&quot;, Dell 27&quot; 4k Monitor, KeyChron K2 Keyboard (blue Gateron
                   switches), Apple Magic Trackpad, CalDigit TS3 hub, Lacie D2 HD</p>
         </div>
         <br></br>

@@ -4,17 +4,16 @@ $main-font: "Fira Mono", monospace;
 
 $family-sans-serif: $main-font;
 
-
 $black-coffee: #342e37;
 $bright-green: #c6f91f;
-$white: #ffffff;
+$white: #effef6;
 $black: #000000;
+$dark-red: #7c210f;
 $red: #e03616;
-
 
 $primary: $white;
 $dark: $black-coffee;
-$link: $red;
+$link: $dark-red;
 $info: $red;
 $warning: $bright-green;
 $body-background-color: $white;
@@ -23,20 +22,15 @@ $control-border-width: 2px;
 $danger: $red;
 $navbar-item-hover-background-color: none;
 $navbar-item-hover-color: none;
-$hr-background-color: $red;
+$hr-background-color: #7c210f98;
 
 $footer-padding: 1.5rem;
 $footer-background-color: $primary;
 
 .whole-page {
   position: relative;
-  min-height: calc(100vh - 3.25rem);
+  min-height: 100vh
 }
-
-hr {
-  background-color: $bright-green;
-}
-
 
 // NAVBAR
 
@@ -75,6 +69,9 @@ hr {
   }
 }
 
+// .navbar {
+//   border-bottom: $dark-red;
+// }
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
@@ -87,14 +84,22 @@ hr {
     }
   }
   transition: 0.4s;
-  
 }
 
 .nav-button {
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid $bright-green;
-    transform: scale(1.05);
+    border-bottom: 2px solid $dark-red;
+    transform: scale(1.04);
+  }
+}
+
+.Header {
+  .hero-body {
+    background-image: url(../assets/background-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -103,7 +108,6 @@ hr {
   transition: 0.2s;
   box-shadow: 0 0 15px rgba($color: #555555, $alpha: 0.5);
 }
-
 
 .footer {
   position: absolute;
