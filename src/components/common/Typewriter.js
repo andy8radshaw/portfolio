@@ -20,7 +20,7 @@ export default function Typewriter({ isHidden }) {
         // index = index + 1 > 2 ? 0 : ++index + 1;
         index = index > 2 ? 0 : ++index
         setMagicName(MagicOcean[index])
-      }, 5000)
+      }, 4500)
       return function clear() {
         clearInterval(intervalRef.current)
       }

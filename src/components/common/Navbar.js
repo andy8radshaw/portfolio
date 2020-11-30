@@ -38,7 +38,7 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
     <nav className={isLightMode ? 'navbar' : 'navbar is-dark'} role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item nav-button" href="https://bulma.io" onClick={handleHomeIcon}>
+          <Link to="/" className="navbar-item nav-button-logo" href="https://bulma.io" onClick={handleHomeIcon}>
             <img src={andyImage} alt="pixel andy" />
           </Link>
           <Typewriter
@@ -70,7 +70,6 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
               say hello
             </Link>
             <div className={settingsIsOpen ? 'navbar-item has-dropdown is-hoverable is-active' : 'navbar-item is-hoverable has-dropdown'} >
-              {/* <div className='navbar-item has-dropdown is-hoverable'> */}
               <span onClick={handleSettings} className="navbar-link is-arrowless">
                 <span className={settingsIsOpen ? 'icon is-hidden' : 'icon'}>
                   <i className='fas fa-cog'></i>
@@ -79,20 +78,20 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
                   <i className='fas fa-times'></i>
                 </span>
               </span>
-              <div className="navbar-dropdown is-right">
+              <div className={isLightMode ? 'navbar-dropdown is-right' : 'navbar-dropdown is-right has-background-success'}>
                 <div className="navbar-item dropdown">
                   <div className="tags">
-                    <span className="tag is-white">dark mode:</span>
+                    <span className={isLightMode ? 'tag is-white' : 'tag is-success'}>dark mode:</span>
                     <span onClick={handleDarkOn} className={isLightMode ? 'tag is-light' : 'tag is-warning'}>on</span>
-                    <span onClick={handleDarkOff} className={isLightMode ? 'tag is-warning' : 'tag is-light'}>off</span>
+                    <span onClick={handleDarkOff} className={isLightMode ? 'tag is-link' : 'tag is-light'}>off</span>
                   </div>
                 </div>
                 <hr className="navbar-divider"></hr>
                 <div className="navbar-item dropdown">
                   <div className="tags">
-                    <span className="tag is-white">typewriter:</span>
+                    <span className={isLightMode ? 'tag is-white' : 'tag is-success'}>typewriter:</span>
                     <span onClick={handleTypewriterOn} className={typwriterIsOn ? 'tag is-warning' : 'tag is-light'}>on</span>
-                    <span onClick={handleTypewriterOff} className={typwriterIsOn ? 'tag is-light' : 'tag is-warning'}>off</span>
+                    <span onClick={handleTypewriterOff} className={typwriterIsOn ? 'tag is-light' : 'tag is-link'}>off</span>
                   </div>
                 </div>
               </div>

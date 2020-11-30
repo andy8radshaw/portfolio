@@ -10,7 +10,7 @@ export default function ProjectCard({ name, mainImage, isLightMode } ) {
             <img src={mainImage} alt={`${name}`} />
           </figure>
         </div>
-        <div className={isLightMode ? 'card-content has-text-centered' : 'card-content has-text-centered has-background-success has-text-light'}>
+        <div className={isLightMode ? 'card-content has-text-centered has-background-danger' : 'card-content has-text-centered has-background-success has-text-light'}>
           <p>{name}</p>
         </div>
       </div>

@@ -8,7 +8,7 @@ $black-coffee: #342e37;
 $bright-green: #c6f91f;
 $white: #effef6;
 $black: #000000;
-$dark-red: #7c210f;
+$dark-red: #f07167;
 $red: #e03616;
 
 $primary: $white;
@@ -18,11 +18,11 @@ $info: $red;
 $warning: $bright-green;
 $body-background-color: $white;
 $success: #28232b;
+$danger: #c9dfd3;
 $control-border-width: 2px;
-$danger: $red;
 $navbar-item-hover-background-color: none;
 $navbar-item-hover-color: none;
-$hr-background-color: #7c210f98;
+$hr-background-color: $dark-red;
 
 $footer-padding: 1.5rem;
 $footer-background-color: $primary;
@@ -40,7 +40,7 @@ $footer-background-color: $primary;
 
 .Typewriter {
   line-height: 1.5;
-  padding: 15px 0 0 0;
+  padding: 15px 0 0 10px;
   .cursor {
     display: inline-block;
     position: relative;
@@ -69,9 +69,9 @@ $footer-background-color: $primary;
   }
 }
 
-// .navbar {
-//   border-bottom: $dark-red;
-// }
+.navbar {
+  border-bottom: 3px dotted #00000048;
+}
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
@@ -87,10 +87,16 @@ $footer-background-color: $primary;
 }
 
 .nav-button {
-  border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid $dark-red;
-    transform: scale(1.04);
+    background-color: $danger;
+    transform: scale(1.06);
+  }
+}
+
+.nav-button-logo {
+  &:hover {
+    background-color: $danger;
+    transform: scale(1.3);
   }
 }
 
@@ -101,6 +107,10 @@ $footer-background-color: $primary;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.content-link:hover {
+  color: $red;
 }
 
 .project-card:hover {
