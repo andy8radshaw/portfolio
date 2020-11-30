@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import PageContainer from '../common/PageContainer'
 import PageTitle from '../common/PageTitle'
+import image from '../../assets/image.png'
 
 
 function Home({ isLightMode }) {
@@ -44,6 +45,7 @@ function Home({ isLightMode }) {
         would like some advice about your sound system or just want to chat guitars. Gibson ES-335 if you&apos;re
         asking...</p>
         <br></br>
+        <img src={image}/>
       </div>
     </PageContainer>
   )

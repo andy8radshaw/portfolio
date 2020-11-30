@@ -5,23 +5,24 @@ $main-font: "Fira Mono", monospace;
 $family-sans-serif: $main-font;
 
 $black-coffee: #342e37;
+$darker-coffee: #28232b;
 $bright-green: #c6f91f;
 $white: #effef6;
+$darker-white: #c9dfd3;
 $black: #000000;
 $dark-red: #f07167;
 $red: #e03616;
 
 $primary: $white;
+$light: $white;
 $dark: $black-coffee;
 $link: $dark-red;
 $info: $red;
 $warning: $bright-green;
 $body-background-color: $white;
-$success: #28232b;
-$danger: #c9dfd3;
+$success: $darker-coffee;
+$danger: $darker-white;
 $control-border-width: 2px;
-$navbar-item-hover-background-color: none;
-$navbar-item-hover-color: none;
 $hr-background-color: $dark-red;
 
 $footer-padding: 1.5rem;
@@ -88,15 +89,14 @@ $footer-background-color: $primary;
 
 .nav-button {
   &:hover {
-    background-color: $danger;
     transform: scale(1.06);
   }
 }
 
 .nav-button-logo {
   &:hover {
-    background-color: $danger;
-    transform: scale(1.3);
+    background-color: transparent;
+    transform: scale(1.5);
   }
 }
 
