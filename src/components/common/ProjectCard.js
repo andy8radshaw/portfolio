@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function ProjectCard({ name, mainImage, isLightMode } ) {
   return (
-    <Link to ={`portfolio/${name}`} className="column is-one-third-desktop is-half-tablet">
+    <Link to ={`portfolio/${name}`} className="column is-one-quarter-desktop is-half-tablet">
       <div className="card project-card">
         <div className="card-image">
           <figure className="image is-4by3 main-image">

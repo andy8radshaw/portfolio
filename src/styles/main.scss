@@ -7,26 +7,25 @@ $family-sans-serif: $main-font;
 $black-coffee: #342e37;
 $darker-coffee: #28232b;
 $bright-green: #c6f91f;
-$white: #effef6;
-$darker-white: #c9dfd3;
-$black: #000000;
+$light-green: #effef6;
+$darker-green: #c9dfd3;
 $dark-red: #f07167;
 $red: #e03616;
+$white: #fff9e6;
 
-$primary: $white;
-$light: $white;
+$light: $light-green;
 $dark: $black-coffee;
 $link: $dark-red;
 $info: $red;
 $warning: $bright-green;
-$body-background-color: $white;
 $success: $darker-coffee;
-$danger: $darker-white;
-$control-border-width: 2px;
-$hr-background-color: $dark-red;
+$danger: $darker-green;
 
+$control-border-width: 2px;
+$body-background-color: $light-green;
+$hr-background-color: $dark-red;
 $footer-padding: 1.5rem;
-$footer-background-color: $primary;
+$footer-background-color: $light;
 
 .whole-page {
   position: relative;

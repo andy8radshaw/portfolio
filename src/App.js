@@ -15,7 +15,7 @@ import ErrorPage from './components/common/ErrorPage'
 
 function App() {
 
-  const [isLightMode, setIsLightMode] = useState(true)
+  const [isLightMode, setIsLightMode] = useState(false)
 
   const handleDarkOn = () => {
     setIsLightMode(false)
