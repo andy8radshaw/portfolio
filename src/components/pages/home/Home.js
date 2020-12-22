@@ -2,8 +2,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import PageContainer from '../common/PageContainer'
-import PageTitle from '../common/PageTitle'
+import PageContainer from '../../common/PageContainer'
+import PageTitle from '../../common/PageTitle'
 
 
 function Home({ isLightMode }) {

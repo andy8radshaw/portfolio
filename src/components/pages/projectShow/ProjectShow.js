@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
-import PageContainer from '../common/PageContainer'
-import PageTitle from '../common/PageTitle'
+import PageContainer from '../../common/PageContainer'
+import PageTitle from '../../common/PageTitle'
+import ScreenshotCard from './ScreenshotCard'
 
-import { projects } from '../../lib/projects'
+import { projects } from '../../../lib/projects'
 
 export default function ProjectShow({ isLightMode }) {
   const [project, setProject] = useState(null)
   const { id } = useParams()
 
-  console.log(typeof (id))
-
   useEffect(() => {
     const getProject = () => {
       const projectData = projects.filter(project => {
         if (project.name === id) return project
+        return ''
       })
       setProject(projectData[0])
+      return
     }
     getProject()
   }, [id])
@@ -31,9 +32,9 @@ export default function ProjectShow({ isLightMode }) {
       <br />
       <p>Links:</p>
       <br />
-      <a href={project.deployedApp} rel="noreferrer" target="_blank" className="content-link">{project.name}</a>
+      <a href={project.deployedApp} rel="noopener noreferrer" target="_blank" className="content-link">{project.name}</a>
       <br />
-      <a href={project.readMe} rel="noreferrer" target="_blank" className="content-link">Documentation</a>
+      <a href={project.readMe} rel="noopener noreferrer" target="_blank" className="content-link">Documentation</a>
       <br />
       <Link to="/portfolio" className="content-link">Back to Portfolio</Link>
       <br />
@@ -42,9 +43,10 @@ export default function ProjectShow({ isLightMode }) {
       <div className="container">
         <div className="columns is-multiline">
           {project.images.map(image => (
-            <figure key={image} className="column image">
-              <img src={image} alt='tester' />
-            </figure>
+            <ScreenshotCard
+              key={image}
+              image={image}
+            />
           ))}
         </div>
       </div>

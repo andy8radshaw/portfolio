@@ -61,5 +61,4 @@ export const projects = [
       'https://i.imgur.com/PGPeXYR.jpg'
     ]
   }
-
 ]

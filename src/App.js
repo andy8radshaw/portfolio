@@ -1,27 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Navbar from './components/common/Navbar'
-import Home from './components/pages/Home'
-import Portfolio from './components/pages/Portfolio'
-import ProjectShow from './components/pages/ProjectShow'
-import Contact from './components/pages/Contact'
-import Experience from './components/pages/Experience'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import ErrorPage from './components/common/ErrorPage'
 
+import Home from './components/pages/home/Home'
+import Portfolio from './components/pages/portfolio/Portfolio'
+import ProjectShow from './components/pages/projectShow/ProjectShow'
+import Contact from './components/pages/contact/Contact'
+import Experience from './components/pages/experience/Experience'
+
 
 function App() {
 
-  const [isLightMode, setIsLightMode] = useState(false)
+  const [isLightMode, setIsLightMode] = useState(true)
+
+  useEffect(() => {
+    const getLightMode = localStorage.getItem('isLightMode') === 'true'
+    setIsLightMode(getLightMode)
+  }, [isLightMode])
 
   const handleDarkOn = () => {
+    localStorage.setItem('isLightMode', 'false')
     setIsLightMode(false)
   }
 
   const handleDarkOff = () => {
+    localStorage.setItem('isLightMode', 'true')
     setIsLightMode(true)
   }
 

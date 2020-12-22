@@ -1,6 +1,6 @@
 import React from 'react'
-import PageContainer from '../common/PageContainer'
-import PageTitle from '../common/PageTitle'
+import PageContainer from '../../common/PageContainer'
+import PageTitle from '../../common/PageTitle'
 
 export default function Experience({ isLightMode }) {
   return (

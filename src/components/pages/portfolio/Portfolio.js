@@ -1,9 +1,9 @@
 import React from 'react'
-import PageContainer from '../common/PageContainer'
-import PageTitle from '../common/PageTitle'
-import ProjectCard from '../common/ProjectCard'
+import PageContainer from '../../common/PageContainer'
+import PageTitle from '../../common/PageTitle'
+import ProjectCard from './ProjectCard'
 
-import { projects } from '../../lib/projects'
+import { projects } from '../../../lib/projects'
 
 
 export default function Portfolio({ isLightMode }) {
