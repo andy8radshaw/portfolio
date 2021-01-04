@@ -22,8 +22,6 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
     if (burgerIsOpen) setBurgerIsOpen(false)
   }
 
-  
-
   const handleTypewriterOn = () => {
     setTypewriterIsOn(true)
   }
@@ -36,7 +34,7 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
 
   return (
     <nav className={isLightMode ? 'navbar is-light' : 'navbar is-dark'} role="navigation" aria-label="main navigation">
-      <div className="container">
+      <div className="container" >
         <div className="navbar-brand">
           <Link to="/" className="navbar-item nav-button" href="https://bulma.io" onClick={handleHomeIcon}>
             <img src={andyImage} alt="pixel andy" />
