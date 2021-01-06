@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom'
 import Typewriter from './Typewriter'
 
 import andyImage from '../../assets/pixel-andy-small.png'
+import ContactModal from '../pages/contact/ContactModal'
 
 
 export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false)
   const [settingsIsOpen, setSettingsIsOpen] = useState(false)
   const [typwriterIsOn, setTypewriterIsOn] = useState(true)
+  const [contactModalIsOpen, setContactModalIsOpen] = useState(false)
 
   const handleBurger = () => {
     setBurgerIsOpen(!burgerIsOpen)
@@ -28,6 +30,11 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
 
   const handleTypewriterOff = () => {
     setTypewriterIsOn(false)
+  }
+
+  const handleContactModal = () => {
+    setBurgerIsOpen(!burgerIsOpen)
+    setContactModalIsOpen(!contactModalIsOpen)
   }
 
 
@@ -64,9 +71,13 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
             <Link className="navbar-item nav-button" to="/portfolio" onClick={handleBurger}>
               portfolio
             </Link>
-            <Link className="navbar-item nav-button" to="/contact" onClick={handleBurger}>
+            <a className="navbar-item nav-button" onClick={handleContactModal}>
               say hello
-            </Link>
+            </a>
+            <ContactModal 
+              isOpen = {contactModalIsOpen}
+              onClick={handleContactModal}
+            />
             <div className={settingsIsOpen ? 'navbar-item has-dropdown is-active' : 'navbar-item has-dropdown'} >
               <span onClick={handleSettings} className="navbar-link is-arrowless">
                 <span className={settingsIsOpen ? 'icon is-hidden' : 'icon'}>

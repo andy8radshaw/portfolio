@@ -62,12 +62,6 @@ function App() {
             )}
           />
           <Route
-            path="/contact"
-            render={(props) => (
-              <Contact {...props} isLightMode={isLightMode} />
-            )}
-          />
-          <Route
             path="/experience"
             render={(props) => (
               <Experience {...props} isLightMode={isLightMode} />

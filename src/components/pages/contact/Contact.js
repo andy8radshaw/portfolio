@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PageContainer from '../../common/PageContainer'
 import PageTitle from '../../common/PageTitle'
 
 import FormContainer from '../../common/FormContainer'
 import FormInput from '../../common/FormInput'
 import FormButton from '../../common/FormButton'
+import FormTextArea from '../../common/FormTextArea'
 
 function Contact({ isLightMode }) {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+
   return (
     <PageContainer>
       <PageTitle
@@ -18,17 +25,14 @@ function Contact({ isLightMode }) {
       <FormContainer>
         <FormInput
           label='Name'
-          inputType='input has-background-light'
           placeholder="Name"
         />
         <FormInput
           label='Email'
-          inputType='input has-background-light'
           placeholder="Email"
         />
-        <FormInput
+        <FormTextArea
           label='Message'
-          inputType='textarea has-background-light'
           placeholder="Message..."
         />
         <FormButton></FormButton>
