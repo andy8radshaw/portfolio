@@ -9,13 +9,13 @@ export default function ContactModal({ isOpen, closeModal }) {
           <a href='mailto:andy8radshaw@gmail.com' className='icon is-large'>
             <i className='contact-icon fas fa-envelope'></i>
           </a>
-          <a href='https://www.linkedin.com/in/andybradshaw8/' target='_blank' rel='noreferrer' className='icon is-large'>
+          <a href='https://www.linkedin.com/in/andybradshaw8/' target='_blank' rel='noopener noreferrer' className='icon is-large'>
             <i className='contact-icon fab fa-linkedin'></i>
           </a>
-          <a href='https://github.com/andy8radshaw' target='_blank' rel='noreferrer' className='icon is-large'>
+          <a href='https://github.com/andy8radshaw' target='_blank' rel='noopener noreferrer' className='icon is-large'>
             <i className='contact-icon fab fa-github'></i>
           </a>
-          <a href='https://instagram.com/andybradshaw' target='_blank' rel='noreferrer' className='icon is-large'>
+          <a href='https://instagram.com/andybradshaw' target='_blank' rel='noopener noreferrer' className='icon is-large'>
             <i className='contact-icon fab fa-instagram'></i>
           </a>
         </div>

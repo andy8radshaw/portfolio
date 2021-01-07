@@ -6,7 +6,7 @@ export default function ScreenshotCard({ image }) {
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src={image} alt="Placeholder image" />
+            <img src={image} alt="screenshot of project" />
           </figure>
         </div>
       </div >

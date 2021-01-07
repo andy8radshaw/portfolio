@@ -75,9 +75,9 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
             <Link className="navbar-item nav-button" to="/portfolio" onClick={handleBurger}>
               portfolio
             </Link>
-            <a className="navbar-item nav-button" onClick={handleContactModalOpen}>
+            <p className="navbar-item nav-button" onClick={handleContactModalOpen}>
               say hello
-            </a>
+            </p>
             <ContactModal 
               isOpen = {contactModalIsOpen}
               closeModal={handleContactModalClose}
