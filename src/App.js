@@ -10,7 +10,6 @@ import ErrorPage from './components/common/ErrorPage'
 import Home from './components/pages/home/Home'
 import Portfolio from './components/pages/portfolio/Portfolio'
 import ProjectShow from './components/pages/projectShow/ProjectShow'
-import Contact from './components/pages/contact/Contact'
 import Experience from './components/pages/experience/Experience'
 
 

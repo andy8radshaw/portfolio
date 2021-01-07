@@ -32,9 +32,13 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
     setTypewriterIsOn(false)
   }
 
-  const handleContactModal = () => {
-    setBurgerIsOpen(!burgerIsOpen)
-    setContactModalIsOpen(!contactModalIsOpen)
+  const handleContactModalOpen = () => {
+    setBurgerIsOpen(true)
+    setContactModalIsOpen(true)
+  }
+
+  const handleContactModalClose = () => {
+    setContactModalIsOpen(false)
   }
 
 
@@ -71,12 +75,12 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
             <Link className="navbar-item nav-button" to="/portfolio" onClick={handleBurger}>
               portfolio
             </Link>
-            <a className="navbar-item nav-button" onClick={handleContactModal}>
+            <a className="navbar-item nav-button" onClick={handleContactModalOpen}>
               say hello
             </a>
             <ContactModal 
               isOpen = {contactModalIsOpen}
-              onClick={handleContactModal}
+              closeModal={handleContactModalClose}
             />
             <div className={settingsIsOpen ? 'navbar-item has-dropdown is-active' : 'navbar-item has-dropdown'} >
               <span onClick={handleSettings} className="navbar-link is-arrowless">

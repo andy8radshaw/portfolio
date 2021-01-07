@@ -6,7 +6,7 @@ $family-sans-serif: $main-font;
 
 $black-coffee: #342e37;
 $darker-coffee: #28232b;
-$bright-green: #c6f91f;
+$bright-green: #02aeb9;
 $light-green: #fefef8;
 $darker-green: #c9dfd3;
 $dark-red: #f07167;
@@ -28,6 +28,9 @@ $footer-padding: 1.5rem;
 $footer-background-color: $light;
 $input-shadow: none;
 $input-focus-border-color: $dark;
+$icon-dimensions-large: 5rem;
+$modal-content-width: 360px;
+$modal-content-spacing-mobile: 10px;
 
 .whole-page {
   position: relative;
@@ -71,8 +74,14 @@ $input-focus-border-color: $dark;
   }
 }
 
+.contact-icon {
+  font-size: 60px;
+  color: $link;
+}
+
 .navbar {
   border-bottom: 3px dotted #00000048;
+  
 }
 .navbar-item {
   &.has-dropdown {
