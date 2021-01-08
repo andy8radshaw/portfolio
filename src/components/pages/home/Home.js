@@ -50,7 +50,7 @@ function Home({ isLightMode }) {
         about being adaptable, working as part of a team and delivering excellent results on time in an agile
         environment. In my new role at Reach I will continue on the path of development, improving my
         skills, and aim to become a valued and creative member of the team.</p><br/>
-        <p>Please get in <a href='#contact' className="content-link" onClick={handleContactModal}>contact</a> if you are interested in working with me. Likewise, if you
+        <p>Please get in <p className="content-link" onClick={handleContactModal}>contact</p> if you are interested in working with me. Likewise, if you
         would like some advice about your sound system or just want to chat guitars. Gibson ES-335 if you&apos;re
         asking...</p>
         <br></br>

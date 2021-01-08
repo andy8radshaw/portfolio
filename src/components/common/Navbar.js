@@ -47,7 +47,7 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
     <nav className={isLightMode ? 'navbar is-light' : 'navbar is-dark'} role="navigation" aria-label="main navigation">
       <div className="container" >
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item nav-button" href="https://bulma.io" onClick={handleHomeIcon}>
+          <Link to="/" className="navbar-item nav-button nav-button-logo" href="https://bulma.io" onClick={handleHomeIcon}>
             <img src={andyImage} alt="pixel andy" />
           </Link>
           <Typewriter
@@ -75,9 +75,9 @@ export default function Navbar({ handleDarkOn, handleDarkOff, isLightMode }) {
             <Link className="navbar-item nav-button" to="/portfolio" onClick={handleBurger}>
               portfolio
             </Link>
-            <a href='#contact' className="navbar-item nav-button" onClick={handleContactModalOpen}>
+            <div className="navbar-item nav-button" onClick={handleContactModalOpen}>
               say hello
-            </a>
+            </div>
             <ContactModal 
               isOpen = {contactModalIsOpen}
               closeModal={handleContactModalClose}

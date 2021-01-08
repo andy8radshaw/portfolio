@@ -23,7 +23,7 @@ $danger: $light-green;
 
 $control-border-width: 2px;
 $body-background-color: $cream;
-$navbar-item-hover-color: $light-red;
+$navbar-item-hover-background: $light-red;
 $hr-background-color: $light-red;
 $footer-padding: 1.5rem;
 $footer-background-color: $light;
@@ -81,7 +81,7 @@ $modal-content-spacing-mobile: 10px;
   transition: 0.3s;
   &:hover {
     color: $darker-red;
-    transform: scale(1.06);
+    transform: scale(1.16);
     transition: 0.3s;
   }
 }
@@ -90,6 +90,10 @@ $modal-content-spacing-mobile: 10px;
   border-bottom: 3px dotted #00000048;
 }
 .navbar-item {
+  &:hover {
+    background-color:transparent !important;
+    color: $light-red !important;
+  }
   &.has-dropdown {
     .navbar-dropdown {
       display: none;
@@ -105,14 +109,14 @@ $modal-content-spacing-mobile: 10px;
 
 .nav-button {
   &:hover {
-    transform: scale(1.06);
+    transform: scale(1.1);
   }
 }
 
 .nav-button-logo {
   &:hover {
     background-color: transparent;
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
 
@@ -125,8 +129,14 @@ $modal-content-spacing-mobile: 10px;
   }
 }
 
-.content-link:hover {
-  color: $darker-red;
+.content-link {
+  color: $light-red;
+  display: inline;
+  &:hover {
+    color: $darker-red;
+    font-weight: 500;
+    cursor: pointer;
+  }
 }
 
 .project-card:hover {

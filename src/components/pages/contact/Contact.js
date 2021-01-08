@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PageContainer from '../../common/PageContainer'
 import PageTitle from '../../common/PageTitle'
 
@@ -8,11 +8,6 @@ import FormButton from '../../common/FormButton'
 import FormTextArea from '../../common/FormTextArea'
 
 function Contact({ isLightMode }) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
 
   return (
     <PageContainer>
