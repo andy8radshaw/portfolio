@@ -92,7 +92,7 @@ $modal-content-spacing-mobile: 10px;
 }
 .navbar-item {
   &:hover {
-    background-color:transparent !important;
+    background-color: transparent !important;
     color: $light-red !important;
   }
   &:focus {
@@ -119,6 +119,7 @@ $modal-content-spacing-mobile: 10px;
 
 .nav-button-logo {
   &:hover {
+    background: radial-gradient(circle, rgba(2,174,185,1) 10%, rgba(0,0,0,0) 61%) !important;
     transform: scale(1.2);
   }
 }
