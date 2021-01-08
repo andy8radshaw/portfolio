@@ -6,24 +6,25 @@ $family-sans-serif: $main-font;
 
 $black-coffee: #342e37;
 $darker-coffee: #28232b;
-$bright-green: #02aeb9;
-$light-green: #fefef8;
-$darker-green: #c9dfd3;
-$dark-red: #f07167;
-$red: #e03616;
+$bright-blue: #02aeb9;
+$cream: #fefef8;
+$light-green: #c9dfd3;
+$light-red: #f07167;
+$darker-red: #e03616;
 $white: #fff9e6;
 
-$light: $light-green;
+$light: $cream;
 $dark: $black-coffee;
-$link: $dark-red;
-$info: $red;
-$warning: $bright-green;
+$link: $light-red;
+$info: $darker-red;
+$warning: $bright-blue;
 $success: $darker-coffee;
-$danger: $darker-green;
+$danger: $light-green;
 
 $control-border-width: 2px;
-$body-background-color: $light-green;
-$hr-background-color: $dark-red;
+$body-background-color: $cream;
+$navbar-item-hover-color: $light-red;
+$hr-background-color: $light-red;
 $footer-padding: 1.5rem;
 $footer-background-color: $light;
 $input-shadow: none;
@@ -77,11 +78,16 @@ $modal-content-spacing-mobile: 10px;
 .contact-icon {
   font-size: 60px;
   color: $link;
+  transition: 0.3s;
+  &:hover {
+    color: $darker-red;
+    transform: scale(1.06);
+    transition: 0.3s;
+  }
 }
 
 .navbar {
   border-bottom: 3px dotted #00000048;
-  
 }
 .navbar-item {
   &.has-dropdown {
@@ -120,7 +126,7 @@ $modal-content-spacing-mobile: 10px;
 }
 
 .content-link:hover {
-  color: $red;
+  color: $darker-red;
 }
 
 .project-card:hover {
