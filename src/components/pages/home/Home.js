@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import PageContainer from '../../common/PageContainer'
 import PageTitle from '../../common/PageTitle'
