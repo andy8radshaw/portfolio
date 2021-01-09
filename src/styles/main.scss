@@ -163,7 +163,7 @@ $modal-content-spacing-mobile: 10px;
 .image-modal {
   min-width: 84vw;
   .image-modal-img {
-    object-fit: contain;
+    object-fit:scale-down;
   }
 }
 
