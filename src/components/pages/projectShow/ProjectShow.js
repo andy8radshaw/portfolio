@@ -9,6 +9,7 @@ import { projects } from '../../../lib/projects'
 
 export default function ProjectShow({ isLightMode }) {
   const [project, setProject] = useState(null)
+  
   const { id } = useParams()
 
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function ProjectShow({ isLightMode }) {
       <br />
       <br />
       <p>Screenshots:</p>
+      <br />
       <div className="container">
         <div className="columns is-multiline">
           {project.images.map(image => (

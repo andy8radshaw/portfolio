@@ -30,7 +30,6 @@ $footer-background-color: $light;
 $input-shadow: none;
 $input-focus-border-color: $dark;
 $icon-dimensions-large: 5rem;
-$modal-content-width: 360px;
 $modal-content-spacing-mobile: 10px;
 
 .whole-page {
@@ -74,18 +73,6 @@ $modal-content-spacing-mobile: 10px;
     }
   }
 }
-
-.contact-icon {
-  font-size: 60px;
-  color: $link;
-  transition: 0.3s;
-  &:hover {
-    color: $darker-red;
-    transform: scale(1.16);
-    transition: 0.3s;
-  }
-}
-
 
 .navbar {
   border-bottom: 3px dotted #00000048;
@@ -136,6 +123,21 @@ $modal-content-spacing-mobile: 10px;
   }
 }
 
+.contact-icon {
+  font-size: 60px;
+  color: $link;
+  transition: 0.3s;
+  &:hover {
+    color: $darker-red;
+    transform: scale(1.16);
+    transition: 0.3s;
+  }
+}
+
+.contact-modal {
+  max-width: 360px;
+}
+
 .content-link {
   color: $light-red;
   display: inline;
@@ -150,6 +152,19 @@ $modal-content-spacing-mobile: 10px;
   transform: scale(1.02);
   transition: 0.2s;
   box-shadow: 0 0 15px rgba($color: #555555, $alpha: 0.5);
+}
+
+.screenshot-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba($color: #555555, $alpha: 0.5);
+}
+
+.image-modal {
+  min-width: 84vw;
+  .image-modal-img {
+    // object-fit: contain;
+  }
 }
 
 .footer {

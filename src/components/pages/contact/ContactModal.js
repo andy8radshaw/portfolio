@@ -4,7 +4,7 @@ export default function ContactModal({ isOpen, closeModal }) {
   return (
     <div className={isOpen ? 'modal is-active' : 'modal'}>
       <div className='modal-background' onClick={closeModal}></div>
-      <div className='modal-content box has-background-light'>
+      <div className='modal-content box has-background-light contact-modal '>
         <div className='has-icons-centered'>
           <a href='mailto:andy8radshaw@gmail.com' className='icon is-large'>
             <i className='contact-icon fas fa-envelope'></i>
