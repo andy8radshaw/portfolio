@@ -164,7 +164,7 @@ $modal-content-spacing-mobile: 10px;
   min-width: 84vw;
   .image-modal-img {
     object-fit: scale-down;
-    height: 100%;
+    max-height: 100%;
   }
 }
 
