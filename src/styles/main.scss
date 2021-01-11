@@ -161,10 +161,9 @@ $modal-content-spacing-mobile: 10px;
 }
 
 .image-modal {
-  min-width: 84vw;
+  min-width: 64vw;
   .image-modal-img {
-    object-fit: scale-down;
-    max-height: 100%;
+    object-fit: contain;
   }
 }
 
